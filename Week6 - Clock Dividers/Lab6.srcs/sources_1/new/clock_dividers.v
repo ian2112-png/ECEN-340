@@ -21,7 +21,7 @@
 
 
 module clock_dividers(sw, clk, btnC, seg, an, dp);
-    input [15:0] sw; // TODO: how to set clock speed
+    input [15:0] sw; 
     input clk, btnC;
     output reg [6:0] seg;
     output reg [3:0] an;
@@ -66,21 +66,33 @@ module clock_dividers(sw, clk, btnC, seg, an, dp);
         begin 
         case (an)
             4'b1111: an <= 4'b1110; 
-            4'b1110: begin 
+            4'b1110: 
+                seg <= get_led_layout(sw[7:4]); 
+            4'b1101:        
+                
+                seg <= get_led_layout(sw[11:8]);
+            4'b1011:      
+                
+                seg <= get_led_layout(sw[15:12]);
+            4'b0111:   
+                seg <= get_led_layout(sw[3:0]);
+                
+            default:  
+                seg <= 7'b1111111; // all segments off
+         endcase  
+         
+         case (an)
+            4'b1111: an <= 4'b1110; 
+            4'b1110: 
                 an <= 4'b1101;
-                seg <= get_led_layout(sw[3:0]); end
-            4'b1101: begin 
+            4'b1101: 
                 an <= 4'b1011;      
-                seg <= get_led_layout(sw[7:4]); end
-            4'b1011: begin 
+            4'b1011: 
                 an <= 4'b0111;    
-                seg <= get_led_layout(sw[11:8]); end
-            4'b0111: begin 
+            4'b0111: 
                 an <= 4'b1110; 
-                seg <= get_led_layout(sw[15:12]); end
-            default: begin 
+            default: 
                 an <= 4'b1111;
-                seg <= 7'b1111111; end // all segments off
          endcase  
                
         end
