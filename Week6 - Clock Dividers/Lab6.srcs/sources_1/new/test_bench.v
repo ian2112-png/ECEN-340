@@ -20,10 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module test_bench(
+module test_bench();
 
-    );
-      reg [15:0] sw;
+  reg [15:0] sw;
   reg clk;
   reg btnC; 
   wire [3:0] an;
@@ -42,17 +41,15 @@ clock_dividers U1(
   always #5 clk=~clk;
   initial
   begin
-  
-  clk = 0;
-  btnC=1;
-   sw = 16'hABCD;
-   #20
- btnC =0;
+    // Initialize inputs
+    clk = 0;
+    btnC=1;
+    sw = 16'hABCD;
+    #20 btnC =0;
  
  #1000;
 
-//$finish;
-    end
+   end
    endmodule 
    
 
