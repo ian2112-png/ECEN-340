@@ -41,7 +41,7 @@ module clock_dividers(sw, clk, btnC, seg, an, dp);
                 4'd3:  get_led_layout = 7'b0110000;    // 3
                 4'd4:  get_led_layout = 7'b0011001;    // 4
                 4'd5:  get_led_layout = 7'b0010010;    // 5
-                4'd6:  get_led_layout = 7'b0000011;    // 6
+                4'd6:  get_led_layout = 7'b0000010;    // 6
                 4'd7:  get_led_layout = 7'b1111000;    // 7
                 4'd8:  get_led_layout = 7'b0000000;    // 8
                 4'd9:  get_led_layout = 7'b0011000;    // 9

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Wed Oct 22 11:10:20 2025
+| Date             : Wed Oct 22 11:16:04 2025
 | Host             : 25STC151L19 running 64-bit major release  (build 9200)
 | Command          : report_power -file clock_dividers_power_routed.rpt -pb clock_dividers_power_summary_routed.pb -rpx clock_dividers_power_routed.rpx
 | Design           : clock_dividers
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.102        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.031        |
+| Dynamic (W)              | 0.030        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.5         |
@@ -59,7 +59,7 @@ Table of Contents
 |   Register     |    <0.001 |       20 |     41600 |            0.05 |
 |   CARRY4       |    <0.001 |        5 |      8150 |            0.06 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |       54 |       --- |             --- |
+| Signals        |    <0.001 |       53 |       --- |             --- |
 | I/O            |     0.029 |       30 |       106 |           28.30 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.102 |          |           |                 |
@@ -141,7 +141,7 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| clock_dividers |     0.031 |
+| clock_dividers |     0.030 |
 +----------------+-----------+
 
 
