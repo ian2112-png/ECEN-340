@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Oct 22 11:15:25 2025
+| Date         : Wed Oct 22 11:41:52 2025
 | Host         : 25STC151L19 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file clock_dividers_utilization_synth.rpt -pb clock_dividers_utilization_synth.pb
 | Design       : clock_dividers
@@ -156,12 +156,11 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | FDCE     |   20 |        Flop & Latch |
 | IBUF     |   18 |                  IO |
 | MUXF7    |   14 |               MuxFx |
-| OBUF     |   11 |                  IO |
+| OBUF     |   12 |                  IO |
 | MUXF8    |    7 |               MuxFx |
 | LUT2     |    5 |                 LUT |
 | CARRY4   |    5 |          CarryLogic |
 | LUT1     |    2 |                 LUT |
-| OBUFT    |    1 |                  IO |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 

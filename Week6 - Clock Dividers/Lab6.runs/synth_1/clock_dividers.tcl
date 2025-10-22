@@ -74,6 +74,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   {C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clk_gen.v}
+  {C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/digit_selector.v}
   {C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v}
 }
 OPTRACE "Adding files" END { }

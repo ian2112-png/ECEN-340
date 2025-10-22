@@ -36,6 +36,6 @@ module clk_gen (
         end
     end
 
-    assign clk_out = counter[17];  // Using bit 17 for ~381 Hz clock
+    assign clk_out = counter[17];  // Using bit 17 for a clock around 381 Hz ish 
 
 endmodule
