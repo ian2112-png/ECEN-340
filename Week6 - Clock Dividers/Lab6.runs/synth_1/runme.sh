@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.runs/synth_1'
+HD_PWD='C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

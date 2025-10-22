@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1761082425" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/clock_dividers.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1761152855" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/clock_dividers.dcp">
   <File Type="PA-TCL" Name="clock_dividers.tcl"/>
   <File Type="REPORTS-TCL" Name="clock_dividers_reports.tcl"/>
   <File Type="RDS-RDS" Name="clock_dividers.vds"/>
@@ -20,6 +20,14 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/clock_dividers.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/test_bench.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

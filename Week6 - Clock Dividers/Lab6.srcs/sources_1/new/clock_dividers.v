@@ -27,6 +27,7 @@ module clock_dividers(sw, clk, btnC, seg, an, dp);
     output reg [3:0] an;
     output dp;
     wire slow_clk;
+    reg [1:0] digit_index;
     
     clk_gen clock_slow (.clk_in(clk), .reset(btnC), .clk_out(slow_clk));
     
@@ -55,48 +56,39 @@ module clock_dividers(sw, clk, btnC, seg, an, dp);
         end
     endfunction
     
+ 
     
-    always @ (posedge slow_clk, posedge btnC) begin
+     
     
-       if (btnC) begin
-           an <= 4'b1111;
-       end 
-       
-       else
-        begin 
-        case (an)
-            4'b1111: an <= 4'b1110; 
-            4'b1110: 
-                seg <= get_led_layout(sw[7:4]); 
-            4'b1101:        
-                
-                seg <= get_led_layout(sw[11:8]);
-            4'b1011:      
-                
-                seg <= get_led_layout(sw[15:12]);
-            4'b0111:   
-                seg <= get_led_layout(sw[3:0]);
-                
-            default:  
-                seg <= 7'b1111111; // all segments off
-         endcase  
-         
-         case (an)
-            4'b1111: an <= 4'b1110; 
-            4'b1110: 
-                an <= 4'b1101;
-            4'b1101: 
-                an <= 4'b1011;      
-            4'b1011: 
-                an <= 4'b0111;    
-            4'b0111: 
-                an <= 4'b1110; 
-            default: 
-                an <= 4'b1111;
-         endcase  
-               
+    always @(posedge slow_clk or posedge btnC) begin
+        if (btnC) begin
+            digit_index <= 0;
+        end else begin
+            digit_index <= digit_index + 1;
         end
-       end 
+    end
+
+    always @(*) begin
+        case (digit_index)
+            2'd0: begin
+                seg = get_led_layout(sw[3:0]);
+                an = 4'b1110;
+            end
+            2'd1: begin
+                seg = get_led_layout(sw[7:4]);
+                an = 4'b1101;
+            end
+            2'd2: begin
+                seg = get_led_layout(sw[11:8]);
+                an = 4'b1011;
+            end
+            2'd3: begin
+                seg = get_led_layout(sw[15:12]);
+                an = 4'b0111;
+            end
+        endcase
+    end
+
          
 endmodule
 

@@ -8,13 +8,13 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Tue Oct 21 15:33:47 2025
+  **** Start of session at: Wed Oct 22 11:07:38 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source clock_dividers.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental {C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/utils_1/imports/synth_1/clock_dividers.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/utils_1/imports/synth_1/clock_dividers.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/utils_1/imports/synth_1/clock_dividers.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/utils_1/imports/synth_1/clock_dividers.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top clock_dividers -part xc7a35tcpg236-1
 Starting synth_design
@@ -25,390 +25,377 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26512
+INFO: [Synth 8-7075] Helper process launched with PID 30668
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1028.645 ; gain = 468.602
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1028.227 ; gain = 466.770
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'clock_dividers' [C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clk_gen.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (0#1) [C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clk_gen.v:23]
-INFO: [Synth 8-226] default block is never used [C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v:36]
-INFO: [Synth 8-6155] done synthesizing module 'clock_dividers' (0#1) [C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v:23]
-WARNING: [Synth 8-7137] Register seg_reg in module clock_dividers has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v:70]
-WARNING: [Synth 8-3848] Net dp in module/entity clock_dividers does not have driver. [C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v:28]
+INFO: [Synth 8-6157] synthesizing module 'clock_dividers' [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clk_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (0#1) [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clk_gen.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'clock_dividers' (0#1) [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v:23]
+WARNING: [Synth 8-3848] Net dp in module/entity clock_dividers does not have driver. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v:28]
 WARNING: [Synth 8-7129] Port dp in module clock_dividers is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1133.203 ; gain = 573.160
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1133.422 ; gain = 571.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1133.203 ; gain = 573.160
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1133.422 ; gain = 571.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1133.203 ; gain = 573.160
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1133.422 ; gain = 571.965
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1133.203 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1133.422 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:47]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:47]
+Parsing XDC File [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:47]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:48]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:49]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:49]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:50]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:51]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:52]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:52]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:53]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:54]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:55]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:55]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:56]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:57]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:58]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:58]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:59]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:60]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:61]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:61]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:62]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:62]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:63]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:63]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:64]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:64]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:65]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:65]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:66]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:66]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:67]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:67]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:68]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:68]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:69]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:69]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:70]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:71]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:71]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:72]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:73]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:73]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:74]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:74]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:75]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:75]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:76]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:76]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:77]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:77]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:78]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:78]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:113]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:113]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:114]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:114]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:115]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:115]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:116]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:116]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:117]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:117]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:118]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:118]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:119]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:119]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:120]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:120]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[0]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:126]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'JA[0]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:126]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[0]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:127]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'JA[0]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:127]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[1]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:129]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'JA[1]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:129]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:129]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[1]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:130]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'JA[1]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:130]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[2]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:132]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'JA[2]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:132]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[2]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:133]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'JA[2]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:133]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[3]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:135]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'JA[3]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:135]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[3]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:136]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'JA[3]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:136]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[4]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:138]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'JA[4]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:138]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[4]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:139]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'JA[4]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:139]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[5]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:141]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'JA[5]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:141]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[5]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:142]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'JA[5]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:142]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[6]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:144]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'JA[6]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:144]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[6]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:145]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'JA[6]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:145]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[7]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:147]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'JA[7]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:147]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JA[7]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:148]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'JA[7]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:148]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:154]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:154]
+WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:154]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:155]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:155]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:157]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:157]
+WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:157]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:158]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:158]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[2]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:160]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'JB[2]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:160]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[2]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:161]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:161]
+WARNING: [Vivado 12-584] No ports matched 'JB[2]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:161]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[3]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:163]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:163]
+WARNING: [Vivado 12-584] No ports matched 'JB[3]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:163]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[3]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:164]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:164]
+WARNING: [Vivado 12-584] No ports matched 'JB[3]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:164]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[4]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:166]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:166]
+WARNING: [Vivado 12-584] No ports matched 'JB[4]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:166]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:166]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[4]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:167]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:167]
+WARNING: [Vivado 12-584] No ports matched 'JB[4]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:167]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[5]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:169]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:169]
+WARNING: [Vivado 12-584] No ports matched 'JB[5]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:169]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[5]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:170]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:170]
+WARNING: [Vivado 12-584] No ports matched 'JB[5]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:170]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:170]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[6]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:172]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:172]
+WARNING: [Vivado 12-584] No ports matched 'JB[6]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:172]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:172]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[6]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:173]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:173]
+WARNING: [Vivado 12-584] No ports matched 'JB[6]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:173]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:173]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[7]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:175]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:175]
+WARNING: [Vivado 12-584] No ports matched 'JB[7]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:175]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:175]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JB[7]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:176]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:176]
+WARNING: [Vivado 12-584] No ports matched 'JB[7]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:176]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:176]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[0]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:182]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:182]
+WARNING: [Vivado 12-584] No ports matched 'JC[0]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:182]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[0]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:183]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:183]
+WARNING: [Vivado 12-584] No ports matched 'JC[0]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:183]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[1]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:185]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:185]
+WARNING: [Vivado 12-584] No ports matched 'JC[1]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:185]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[1]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:186]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:186]
+WARNING: [Vivado 12-584] No ports matched 'JC[1]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:186]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[2]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:188]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:188]
+WARNING: [Vivado 12-584] No ports matched 'JC[2]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:188]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:188]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[2]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:189]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:189]
+WARNING: [Vivado 12-584] No ports matched 'JC[2]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:189]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[3]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:191]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:191]
+WARNING: [Vivado 12-584] No ports matched 'JC[3]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:191]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[3]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:192]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:192]
+WARNING: [Vivado 12-584] No ports matched 'JC[3]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:192]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:192]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[4]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:194]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:194]
+WARNING: [Vivado 12-584] No ports matched 'JC[4]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:194]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[4]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:195]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:195]
+WARNING: [Vivado 12-584] No ports matched 'JC[4]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:195]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[5]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:197]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:197]
+WARNING: [Vivado 12-584] No ports matched 'JC[5]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:197]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:197]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[5]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:198]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:198]
+WARNING: [Vivado 12-584] No ports matched 'JC[5]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:198]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:198]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[6]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:200]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:200]
+WARNING: [Vivado 12-584] No ports matched 'JC[6]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:200]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[6]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:201]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:201]
+WARNING: [Vivado 12-584] No ports matched 'JC[6]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:201]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[7]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:203]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:203]
+WARNING: [Vivado 12-584] No ports matched 'JC[7]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:203]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:203]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JC[7]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:204]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:204]
+WARNING: [Vivado 12-584] No ports matched 'JC[7]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:204]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:204]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[0]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:209]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:209]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[0]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:209]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:209]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[0]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:210]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:210]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[0]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:210]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[1]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:212]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:212]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[1]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:212]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:212]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[1]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:213]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:213]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[1]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:213]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:213]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[2]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:215]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:215]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[2]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:215]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[2]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:216]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:216]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[2]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:216]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[3]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:218]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:218]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[3]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:218]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:218]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[3]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:219]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:219]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[3]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:219]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:219]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[4]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:221]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:221]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[4]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:221]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[4]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:222]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:222]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[4]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:222]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[5]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:224]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:224]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[5]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:224]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:224]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JXADC[5]'. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:225]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:225]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc:225]
+WARNING: [Vivado 12-584] No ports matched 'JXADC[5]'. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:225]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:225]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc:225]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/slricks340/Documents/GitHub/ECEN-340/General/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clock_dividers_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clock_dividers_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/clock_dividers_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1200.395 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1204.680 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1200.395 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1204.680 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1200.395 ; gain = 640.352
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1204.680 ; gain = 643.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1200.395 ; gain = 640.352
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1204.680 ; gain = 643.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1200.395 ; gain = 640.352
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1204.680 ; gain = 643.223
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'an_reg' in module 'clock_dividers'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                              000 |                             1111
-                 iSTATE0 |                              001 |                             1110
-                 iSTATE1 |                              010 |                             1101
-                 iSTATE2 |                              011 |                             1011
-                 iSTATE3 |                              100 |                             0111
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'an_reg' using encoding 'sequential' in module 'clock_dividers'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1200.395 ; gain = 640.352
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1204.680 ; gain = 643.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    2 Bit       Adders := 1     
 +---Registers : 
-	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
 +---Muxes : 
-	   5 Input    7 Bit        Muxes := 1     
-	   5 Input    4 Bit        Muxes := 1     
-	   5 Input    3 Bit        Muxes := 1     
-	   5 Input    1 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -427,25 +414,25 @@ Start Cross Boundary and Area Optimization
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7129] Port dp in module clock_dividers is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1200.395 ; gain = 640.352
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1204.680 ; gain = 643.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1325.113 ; gain = 765.070
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1324.363 ; gain = 762.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1356.188 ; gain = 796.145
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1324.363 ; gain = 762.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1356.188 ; gain = 796.145
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1334.426 ; gain = 772.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -463,37 +450,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1551.805 ; gain = 991.762
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1550.594 ; gain = 989.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1551.805 ; gain = 991.762
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1550.594 ; gain = 989.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1551.805 ; gain = 991.762
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1550.594 ; gain = 989.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1551.805 ; gain = 991.762
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1550.594 ; gain = 989.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1551.805 ; gain = 991.762
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1550.594 ; gain = 989.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1551.805 ; gain = 991.762
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1550.594 ; gain = 989.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -512,39 +499,38 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |     5|
 |3     |LUT1   |     2|
-|4     |LUT2   |     1|
-|5     |LUT3   |     7|
-|6     |LUT4   |    29|
-|7     |LUT6   |     7|
-|8     |FDCE   |    21|
-|9     |FDRE   |     7|
-|10    |IBUF   |    18|
-|11    |OBUF   |    11|
-|12    |OBUFT  |     1|
+|4     |LUT2   |     5|
+|5     |LUT4   |    28|
+|6     |MUXF7  |    14|
+|7     |MUXF8  |     7|
+|8     |FDCE   |    20|
+|9     |IBUF   |    18|
+|10    |OBUF   |    11|
+|11    |OBUFT  |     1|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1551.805 ; gain = 991.762
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1550.594 ; gain = 989.137
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1551.805 ; gain = 924.570
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1551.805 ; gain = 991.762
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1550.594 ; gain = 917.879
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1550.594 ; gain = 989.137
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1554.711 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1550.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1558.402 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1550.594 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 6be7100d
+Synth Design complete | Checksum: 699cb712
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 105 Warnings, 100 Critical Warnings and 0 Errors encountered.
+27 Infos, 104 Warnings, 100 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1558.402 ; gain = 1188.414
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1550.594 ; gain = 1179.359
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1558.402 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.runs/synth_1/clock_dividers.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1550.594 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.runs/synth_1/clock_dividers.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file clock_dividers_utilization_synth.rpt -pb clock_dividers_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 21 15:34:08 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 22 11:07:58 2025...

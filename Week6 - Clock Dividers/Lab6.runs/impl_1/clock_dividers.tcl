@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.runs/impl_1/clock_dividers.tcl"
+  variable script "C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.runs/impl_1/clock_dividers.tcl"
   variable category "vivado_impl"
 }
 
@@ -109,7 +109,7 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 10  }
   open_checkpoint clock_dividers_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/slricks340/Documents/GitHub/ECEN-340/Week6 - Clock Dividers/Lab6.cache/wt} [current_project]
+  set_property webtalk.parent_dir {C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.cache/wt} [current_project]
 set_property TOP clock_dividers [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
