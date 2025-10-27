@@ -19,9 +19,9 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module clock_dividers(sw, clk, btnC, seg, an, dp);
+module clock_dividers(sw, clk, btnC, btnD, seg, an, dp);
     input [15:0] sw; 
-    input clk, btnC;
+    input clk, btnC, btnD;
     output [6:0] seg;
     output reg [3:0] an;
     output dp;
@@ -54,9 +54,15 @@ module clock_dividers(sw, clk, btnC, seg, an, dp);
     // Update LED layout and anode based off of the digit index, any time the digit index changes 
     always @(*) begin
         case (digit_index)
+        
             2'd0: begin
+            if (btnC)
+                an = 4'b1111;
+                
+             else begin
                 nibble = sw[3:0];
                 an = 4'b1110;
+                end
             end
             2'd1: begin
                 nibble = sw[7:4];
@@ -69,8 +75,10 @@ module clock_dividers(sw, clk, btnC, seg, an, dp);
             2'd3: begin
                 nibble = sw[15:12];
                 an = 4'b0111;
-            end
+        end 
         endcase
+        
+       if (btnD) nibble = ~nibble; 
     end
 
 endmodule

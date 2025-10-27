@@ -1,31 +1,10 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 10/27/2025 08:38:54 AM
-// Design Name: 
-// Module Name: sseg
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+module sseg(
+    input [3:0] switches,
+    output reg [6:0] led_layout
+);
 
-
-module sseg(switches, led_layout);
-    input [3:0] switches;
-    output reg [6:0] led_layout;
-    
     always @(*) begin
-        // Look up table type function for finding the LEDs that need to be turned on in accordance with the switches
+        // 7-segment pattern lookup
         case (switches)
             4'd0:  led_layout = 7'b1000000;
             4'd1:  led_layout = 7'b1111001;
@@ -45,7 +24,6 @@ module sseg(switches, led_layout);
             4'd15: led_layout = 7'b0001110;
             default: led_layout = 7'b1111111;
         endcase
-        end
+    end
+
 endmodule
-
-
