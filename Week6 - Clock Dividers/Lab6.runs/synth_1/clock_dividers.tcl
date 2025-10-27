@@ -56,8 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 5
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -75,6 +73,7 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   {C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clk_gen.v}
   {C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/digit_selector.v}
+  {C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/sseg.v}
   {C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/Week6 - Clock Dividers/Lab6.srcs/sources_1/new/clock_dividers.v}
 }
 OPTRACE "Adding files" END { }
