@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Mon Oct 27 11:14:51 2025
+| Date         : Mon Oct 27 12:23:17 2025
 | Host         : 25STC151L19 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file clock_dividers_utilization_synth.rpt -pb clock_dividers_utilization_synth.pb
 | Design       : clock_dividers
@@ -93,7 +93,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   31 |     0 |          0 |       106 | 29.25 |
+| Bonded IOB                  |   36 |     0 |          0 |       106 | 33.96 |
 | Bonded IPADs                |    0 |     0 |          0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
@@ -154,7 +154,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | FDCE     |   20 |        Flop & Latch |
 | IBUF     |   19 |                  IO |
-| OBUF     |   12 |                  IO |
+| OBUF     |   17 |                  IO |
 | LUT4     |    8 |                 LUT |
 | LUT2     |    5 |                 LUT |
 | CARRY4   |    5 |          CarryLogic |

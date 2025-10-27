@@ -19,18 +19,27 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module clock_dividers(sw, clk, btnC, btnD, seg, an, dp);
+module clock_dividers(sw, clk, btnC, btnD, seg, an, dp, JA);
     input [15:0] sw; 
     input clk, btnC, btnD;
     output [6:0] seg;
     output reg [3:0] an;
     output dp;
+    output [4:0] JA; 
 
     reg [3:0] nibble;
     wire slow_clk;
     wire [1:0] digit_index;
 
     assign dp = 1'b1; // Not currently using in this part
+    
+    // JA for using the oscilloscope 
+    assign JA[0] = slow_clk;
+    assign JA[1] = an[0];
+    assign JA[2] = an[1];
+    assign JA[3] = an[2];
+    assign JA[4] = an[3];
+
 
     // Clock divider
     clk_gen clock_slow (
