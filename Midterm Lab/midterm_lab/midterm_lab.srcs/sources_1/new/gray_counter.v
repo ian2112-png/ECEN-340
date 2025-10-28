@@ -34,7 +34,7 @@ assign C_next = (~A & ~B) | (A & C);
 
 assign led = {A, B, C};
 
-always @ (posedge clk) begin 
+always @ (posedge clk or posedge reset) begin 
     if (reset) begin 
         A <= 1'b1;
         B <= 1'b1;

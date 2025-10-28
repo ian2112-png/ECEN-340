@@ -33,9 +33,5 @@ clock_gen clk_gen(.clk_in(clk), .reset(btnC), .clk_out(slow_clk));
 
 gray_counter counter(.clk(slow_clk), .reset(btnC), .led(count));
 
-//            4'd0:  led_layout = 7'b1000000;
-//            4'd1:  led_layout = 7'b1111001;
-
-
 
 endmodule
