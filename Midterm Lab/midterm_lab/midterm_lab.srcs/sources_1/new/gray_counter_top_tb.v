@@ -20,7 +20,26 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module gray_counter_top_tb(
+module gray_counter_top_tb();
 
-    );
+reg btnC;
+reg clk;
+wire [2:0] led;
+wire slow_clk;
+wire [2:0] count;
+
+gray_counter_top gray_counter(btnC, led, clk);
+
+  always #5 clk=~clk;
+  initial
+  begin
+    // Initialize inputs
+    clk = 0;
+    #5 btnC = 1;
+    #5 btnC = 0;
+ 
+ #1000;
+
+   end
+
 endmodule
