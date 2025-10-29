@@ -37,6 +37,6 @@ module clock_gen (
     end
 
 //    assign clk_out = counter[25]; // MSB
-        assign clk_out = counter[3]; // MSB
+        assign clk_out = counter[3]; // For simulation
  
 endmodule

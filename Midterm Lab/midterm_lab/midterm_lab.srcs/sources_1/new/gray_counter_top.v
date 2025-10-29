@@ -20,9 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module gray_counter_top(btnC, led, clk);
+module gray_counter_top(btnC, led, clk, sw);
 
 input btnC, clk;
+input [0:0] sw;
 output wire [2:0] led;
 wire slow_clk;
 wire [2:0] count;
@@ -31,7 +32,9 @@ assign led = count;
 
 clock_gen clk_gen(.clk_in(clk), .reset(btnC), .clk_out(slow_clk));
 
-gray_counter counter(.clk(slow_clk), .reset(btnC), .led(count));
+gray_counter counter(.clk(slow_clk), .reset(btnC), .led(count), .sw(sw));
 
 
 endmodule
+
+

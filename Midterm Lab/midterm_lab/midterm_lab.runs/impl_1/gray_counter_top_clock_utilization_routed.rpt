@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue Oct 28 16:53:22 2025
-| Host         : 25STC155L20 running 64-bit major release  (build 9200)
+| Date         : Wed Oct 29 11:33:11 2025
+| Host         : 25STC151L19 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file gray_counter_top_clock_utilization_routed.rpt
 | Design       : gray_counter_top
 | Device       : 7a35t-cpg236
@@ -69,7 +69,7 @@ Table of Contents
 +----------+-----------------+------------+-----------------+--------------+-------------+-----------------+--------------+-------+---------------------------+----------------+
 | Local Id | Driver Type/Pin | Constraint | Site/BEL        | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                | Net            |
 +----------+-----------------+------------+-----------------+--------------+-------------+-----------------+--------------+-------+---------------------------+----------------+
-| 0        | FDCE/Q          | None       | SLICE_X0Y22/BFF | X0Y0         |           3 |               1 |              |       | clk_gen/counter_reg[25]/Q | clk_gen/out[0] |
+| 0        | FDCE/Q          | None       | SLICE_X0Y18/BFF | X0Y0         |           3 |               1 |              |       | clk_gen/counter_reg[25]/Q | clk_gen/out[0] |
 +----------+-----------------+------------+-----------------+--------------+-------------+-----------------+--------------+-------+---------------------------+----------------+
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents cell count of net connects that connect to a clock pin. Internal cell leaf pins are not considered

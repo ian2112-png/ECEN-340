@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Tue Oct 28 16:53:22 2025
-| Host             : 25STC155L20 running 64-bit major release  (build 9200)
+| Date             : Wed Oct 29 11:33:11 2025
+| Host             : 25STC151L19 running 64-bit major release  (build 9200)
 | Command          : report_power -file gray_counter_top_power_routed.rpt -pb gray_counter_top_power_summary_routed.pb -rpx gray_counter_top_power_routed.rpx
 | Design           : gray_counter_top
 | Device           : xc7a35tcpg236-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.073        |
+| Total On-Chip Power (W)  | 0.077        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.002        |
+| Dynamic (W)              | 0.005        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -55,13 +55,13 @@ Table of Contents
 | Clocks         |    <0.001 |        3 |       --- |             --- |
 | Slice Logic    |    <0.001 |       43 |       --- |             --- |
 |   CARRY4       |    <0.001 |        7 |      8150 |            0.09 |
-|   Register     |    <0.001 |       29 |     41600 |            0.07 |
 |   LUT as Logic |    <0.001 |        3 |     20800 |            0.01 |
+|   Register     |    <0.001 |       29 |     41600 |            0.07 |
 |   Others       |     0.000 |        3 |       --- |             --- |
-| Signals        |    <0.001 |       36 |       --- |             --- |
-| I/O            |     0.001 |        5 |       106 |            4.72 |
+| Signals        |    <0.001 |       37 |       --- |             --- |
+| I/O            |     0.004 |        6 |       106 |            5.66 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.073 |          |           |                 |
+| Total          |     0.077 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.010 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -140,7 +140,7 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| gray_counter_top |     0.002 |
+| gray_counter_top |     0.005 |
 +------------------+-----------+
 
 
