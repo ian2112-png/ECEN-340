@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Oct 29 11:32:29 2025
-| Host         : 25STC151L19 running 64-bit major release  (build 9200)
+| Date         : Fri Oct 31 12:39:16 2025
+| Host         : 25STC159L16 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file gray_counter_top_utilization_synth.rpt -pb gray_counter_top_utilization_synth.pb
 | Design       : gray_counter_top
 | Device       : xc7a35tcpg236-1
@@ -93,7 +93,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |    6 |     0 |          0 |       106 |  5.66 |
+| Bonded IOB                  |    7 |     0 |          0 |       106 |  6.60 |
 | Bonded IPADs                |    0 |     0 |          0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
@@ -154,9 +154,9 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | FDCE     |   26 |        Flop & Latch |
 | CARRY4   |    7 |          CarryLogic |
+| IBUF     |    4 |                  IO |
 | OBUF     |    3 |                  IO |
-| LUT4     |    3 |                 LUT |
-| IBUF     |    3 |                  IO |
+| LUT5     |    3 |                 LUT |
 | FDPE     |    3 |        Flop & Latch |
 | LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |

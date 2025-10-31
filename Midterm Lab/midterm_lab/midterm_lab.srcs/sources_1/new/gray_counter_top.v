@@ -23,7 +23,7 @@
 module gray_counter_top(btnC, led, clk, sw);
 
 input btnC, clk;
-input [0:0] sw;
+input [2:0] sw;
 output wire [2:0] led;
 wire slow_clk;
 wire [2:0] count;

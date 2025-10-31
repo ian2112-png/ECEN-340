@@ -24,7 +24,7 @@ module gray_counter_top_tb();
 
 reg btnC;
 reg clk;
-reg [0:0] sw;
+reg [2:0] sw;
 wire [2:0] led;
 wire slow_clk;
 wire [2:0] count;
@@ -45,13 +45,21 @@ gray_counter_top gray_counter(btnC, led, clk, sw);
     #10 btnC = 0;
  
 
-    // --- Test 1: Switch OFF ---
-    sw = 0;          // switch off
-    #1500;            // simulate for 500 ns
+    // --- Test 1 ---
+    sw = 2'd0;        // switches 00
+    #1500;            // simulate for 1500 ns
 
-    // --- Test 2: Switch ON ---
-    sw = 1;          // switch on
-    #1500;            // simulate for 500 ns
+    // --- Test 2 ---
+    sw = 2'd1;        // switches 01
+    #1500;            // simulate for 1500 ns
+    
+    // --- Test 3 ---
+    sw = 2'd2;        // switches 10
+    #1500;            // simulate for 1500 ns
+    
+    // --- Test 4 ---
+    sw = 2'd3;        // switches 11
+    #1500;            // simulate for 1500 ns
 
 $finish;
 
