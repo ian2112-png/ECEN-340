@@ -41,7 +41,10 @@ initial begin
     btnC = 0;
     #100 btnC = 1;
     #50  btnC = 0;
-    #2000000000000 $stop;   // end simulation after some time
+    #20000;
+    #20000;
+    #20000;
+    $finish;
 end
 
   

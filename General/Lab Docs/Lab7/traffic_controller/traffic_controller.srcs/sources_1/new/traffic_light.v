@@ -41,9 +41,9 @@ reg tm15_done = 0;
 reg MG, MR, MY, CG, CR, CY;
 reg start_tm3, start_tm15, start_tm10;
 
-reg start_tm3_dly;
-reg start_tm10_dly;
-reg start_tm15_dly;
+reg start_tm3_dly = 0;
+reg start_tm10_dly = 0;
+reg start_tm15_dly = 0;
 
 reg clk_1Hz;
 
@@ -72,7 +72,7 @@ end
 always@(*)begin
     case(current_state)
         MainG_CenterR: begin 
-            start_tm3 =0;
+            start_tm3 = 0;
             start_tm15 = 1; 
             start_tm10 = 0; 
             MG = 1;
@@ -117,17 +117,17 @@ always@(*)begin
             CR = 0;
             CY = 1; 
             end
-        default: begin
-            start_tm3 = 0;
-            start_tm15 = 0; 
-            start_tm10 = 0; 
-            MG = 0;
-            MR = 0;
-            MY= 0;
-            CG = 0;
-            CR = 0;
-            CY = 0; 
-            end
+//        default: begin
+//            start_tm3 = 0;
+//            start_tm15 = 0; 
+//            start_tm10 = 0; 
+//            MG = 0;
+//            MR = 0;
+//            MY= 0;
+//            CG = 0;
+//            CR = 0;
+//            CY = 0; 
+//            end
     endcase
 end
 
@@ -199,7 +199,8 @@ if (btnC)
         count <= 0;
         clk_1Hz <= 0;
     end
-else if (count < 50000000)
+//else if (count < 50000000) //TODO: uncomment this
+else if (count < 5)
     count <= count +1; // keep incrementing until you hit 50,000,000
 else
     begin
