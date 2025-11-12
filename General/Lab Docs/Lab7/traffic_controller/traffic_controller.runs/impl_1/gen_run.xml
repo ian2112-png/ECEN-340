@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1762799794">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1762968271">
   <File Type="REPORTS-TCL" Name="traffic_light_reports.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="traffic_light_power_summary_routed.pb"/>
   <File Type="BITSTR-MMI" Name="traffic_light.mmi"/>
@@ -99,6 +99,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/traffic_light.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>

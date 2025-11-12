@@ -106,6 +106,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 5
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 10  }
   open_checkpoint traffic_light_routed.dcp
   set_property webtalk.parent_dir {C:/Users/slricks340/Desktop/ECEN 340 Seth Ricks Ian Fleming/ECEN-340/General/Lab Docs/Lab7/traffic_controller/traffic_controller.cache/wt} [current_project]

@@ -158,7 +158,7 @@ end
     
 assign start_tm10_pulse = start_tm10 && !start_tm10_dly;
 
-reg [1:0] cnt_10sec;     // this is an example of a 3-second timer
+reg [3:0] cnt_10sec;     // this is an example of a 3-second timer
 always @ (posedge clk_1Hz, posedge start_tm10_pulse, posedge btnC)
     if (start_tm10_pulse || btnC)   // synchronous btnC
         begin
@@ -179,7 +179,7 @@ end
     
 assign start_tm15_pulse = start_tm15 && !start_tm15_dly;
 
-reg [1:0] cnt_15sec;     // this is an example of a 3-second timer
+reg [3:0] cnt_15sec;     // this is an example of a 3-second timer
 always @ (posedge clk_1Hz, posedge start_tm15_pulse, posedge btnC)
     if (start_tm15_pulse || btnC)   // synchronous btnC
         begin
