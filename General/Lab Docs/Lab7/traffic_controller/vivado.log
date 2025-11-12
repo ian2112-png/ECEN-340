@@ -491,3 +491,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2301.051 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 12 10:38:22 2025...

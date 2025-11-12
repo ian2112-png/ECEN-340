@@ -32,3 +32,4 @@ run all
 relaunch_sim
 run all
 open_run synth_1 -name synth_1
+close_sim
