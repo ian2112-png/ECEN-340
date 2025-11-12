@@ -72,62 +72,21 @@ end
 always@(*)begin
     case(current_state)
         MainG_CenterR: begin 
-            start_tm3 = 0;
-            start_tm15 = 1; 
-            start_tm10 = 0; 
-            MG = 1;
-            MR = 0;
-            MY= 0;
-            CG = 0;
-            CR = 1;
-            CY = 0; 
-     
-         end
+            start_tm3 = 0; start_tm15 = 1; start_tm10 = 0; 
+            MG = 1; MR = 0; MY= 0;
+            CG = 0; CR = 1; CY = 0; end
         MainY_CenterR: begin
-            start_tm3 = 1;
-            start_tm15 = 0; 
-            start_tm10 = 0; 
-            MG = 0 ;
-            MR = 0;
-            MY= 1;
-            CG = 0;
-            CR = 1;
-            CY = 0; 
-            end
+            start_tm3 = 1; start_tm15 = 0; start_tm10 = 0; 
+            MG = 0 ; MR = 0; MY= 1;
+            CG = 0; CR = 1; CY = 0; end
         MainR_CenterG: begin
-            start_tm3 = 0;
-            start_tm15 = 0; 
-            start_tm10 = 1; 
-            MG = 0;
-            MR = 1;
-            MY= 0;
-            CG =1;
-            CR = 0;
-            CY = 0; 
-            end
-       
+            start_tm3 = 0; start_tm15 = 0; start_tm10 = 1; 
+            MG = 0; MR = 1; MY= 0;
+            CG =1; CR = 0; CY = 0; end
         MainR_CenterY: begin
-            start_tm3 = 1;
-            start_tm15 = 0; 
-            start_tm10 = 0; 
-            MG = 0;
-            MR = 1;
-            MY= 0;
-            CG = 0;
-            CR = 0;
-            CY = 1; 
-            end
-//        default: begin
-//            start_tm3 = 0;
-//            start_tm15 = 0; 
-//            start_tm10 = 0; 
-//            MG = 0;
-//            MR = 0;
-//            MY= 0;
-//            CG = 0;
-//            CR = 0;
-//            CY = 0; 
-//            end
+            start_tm3 = 1; start_tm15 = 0; start_tm10 = 0; 
+            MG = 0; MR = 1; MY= 0;
+            CG = 0; CR = 0; CY = 1; end
     endcase
 end
 
@@ -137,7 +96,7 @@ end
     
 assign start_tm3_pulse = start_tm3 && !start_tm3_dly;
 
-reg [1:0] cnt_3sec;     // this is an example of a 3-second timer
+reg [1:0] cnt_3sec;     // 3-second timer
 always @ (posedge clk_1Hz, posedge start_tm3_pulse, posedge btnC)
     if (start_tm3_pulse || btnC)   // synchronous btnC
         begin
@@ -149,16 +108,13 @@ always @ (posedge clk_1Hz, posedge start_tm3_pulse, posedge btnC)
     else
         tm3_done <= 1;
 
-
-
-
 always@(posedge clk)begin 
     start_tm10_dly <= start_tm10; 
 end
     
 assign start_tm10_pulse = start_tm10 && !start_tm10_dly;
 
-reg [3:0] cnt_10sec;     // this is an example of a 3-second timer
+reg [3:0] cnt_10sec;     // 10-second timer
 always @ (posedge clk_1Hz, posedge start_tm10_pulse, posedge btnC)
     if (start_tm10_pulse || btnC)   // synchronous btnC
         begin
@@ -170,16 +126,13 @@ always @ (posedge clk_1Hz, posedge start_tm10_pulse, posedge btnC)
     else
         tm10_done <= 1;
 
-
-
-
 always@(posedge clk)begin 
     start_tm15_dly <= start_tm15; 
 end
     
 assign start_tm15_pulse = start_tm15 && !start_tm15_dly;
 
-reg [3:0] cnt_15sec;     // this is an example of a 3-second timer
+reg [3:0] cnt_15sec;     // 15-second timer
 always @ (posedge clk_1Hz, posedge start_tm15_pulse, posedge btnC)
     if (start_tm15_pulse || btnC)   // synchronous btnC
         begin
@@ -191,7 +144,6 @@ always @ (posedge clk_1Hz, posedge start_tm15_pulse, posedge btnC)
     else
         tm15_done <= 1;
 
-
 reg [25:0] count; // make sure the count has enough bits to count to 50,000,000
 always @ (posedge clk, posedge btnC)    // fclk is 100MHz
 if (btnC)
@@ -199,15 +151,13 @@ if (btnC)
         count <= 0;
         clk_1Hz <= 0;
     end
-//else if (count < 50000000) //TODO: uncomment this
-else if (count < 5)
+else if (count < 50000000) // Real time 
+//else if (count < 5)      // Simulation time
     count <= count +1; // keep incrementing until you hit 50,000,000
 else
     begin
         count <= 0;
         clk_1Hz <= !clk_1Hz; // invert the clock every second
     end
-
-
 
 endmodule
