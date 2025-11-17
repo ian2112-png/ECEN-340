@@ -5,7 +5,7 @@
 // 
 // Create Date: 11/12/2025 10:43:03 AM
 // Design Name: 
-// Module Name: SRAM
+// Module Name: memory
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module SRAM(
+module memory(
     input wire we, oe, clk,
     inout wire [15:0] data,
     input wire[3:0] addr
