@@ -28,8 +28,9 @@ module memory(
     
     reg [15:0] mem [15:0];
     
-    assign data = (oe && !we) ? mem[addr]: 16'hzz;
+    // If output enable and not write enable, get the data at addr. Otherwise, high impedance
+    assign data = (oe && !we) ? mem[addr]: 16'hzz; 
     always @(posedge clk) begin
-        if(we) mem[addr] <= data;
+        if(we) mem[addr] <= data; // Write the data into memory if write enable
         end
 endmodule
