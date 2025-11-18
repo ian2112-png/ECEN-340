@@ -19,12 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-//module code_starter(
-
-//    );
-//endmodule
-
 module memory_top(
     input clk, //100MHz clk.
     input [15:0] sw, //Data for input memory.
@@ -46,8 +40,8 @@ module memory_top(
     reg [15:0] disp_data; // data to be displayed (Ibus or Obus).
     wire left, center, right, up, down; // debounced buttons
     wire [3:0] addr; // address for the input and output memories
-//    sseg_x4_top disp (.clk(clk), .btnC(1'b0), .sw(disp_data), .seg(seg), .an(an), .dp(dp));
-    sseg_x4_top disp (.clk(clk), .sw(disp_data), .seg(seg), .an(an));
+    // sseg_x4_top disp (.clk(clk), .btnC(1'b0), .sw(disp_data), .seg(seg), .an(an), .dp(dp)); 
+    sseg_x4_top disp (.clk(clk), .sw(disp_data), .seg(seg), .an(an)); // Adapted instantiation, removed unused variables
     memory IM (.we(WE_IM), .oe(OE_IM), .clk(clk), .data(Ibus_data), .addr(addr));
     memory OM (.we(WE_OM), .oe(OE_OM), .clk(clk), .data(Obus_data), .addr(addr));
     debounce_buttons bdb (.clk(clk), .btnL(btnL), .btnC(btnC), .btnR(btnR), .btnU(btnU),
