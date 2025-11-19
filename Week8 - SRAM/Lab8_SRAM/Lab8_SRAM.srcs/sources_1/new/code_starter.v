@@ -55,7 +55,13 @@ module memory_top(
 
     assign Ibus_data = OE_sw?sw:16'hZZZZ;
     assign Obus_data = OE_op?op_data:16'hZZZZ;
-    assign op_data = {8'h00, Ibus_data[15:8]} + {8'h00, Ibus_data[7:0]};
+    
+    multiplier mult(.sw(Ibus_data), .led(op_data), .clk(clk)); // Instantiation of Multiplier Module (5.515 WNS??) // TODO: Why is this not faster
+    
+//    assign op_data = {8'h00, Ibus_data[15:8]} * {8'h00, Ibus_data[7:0]};   // Multiplication Operation (0.249 WNS)
+//    assign op_data = {8'h00, Ibus_data[15:8]} + {8'h00, Ibus_data[7:0]}; // Addition       Operation
+
+
     assign led[7:0] = {4'b0000, addr}; // show the address on the four, least significant LEDs.
     // debug using the following LEDs
     assign led[15:8] = {1'b0, disp_ID_ODb, WE_IM, WE_OM, OE_IM, OE_OM, OE_op, OE_sw};
