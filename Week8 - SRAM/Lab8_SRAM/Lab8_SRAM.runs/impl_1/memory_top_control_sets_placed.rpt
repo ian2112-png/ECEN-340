@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Nov 19 11:26:24 2025
+| Date         : Mon Nov 24 09:59:09 2025
 | Host         : 25STC151L19 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file memory_top_control_sets_placed.rpt
 | Design       : memory_top
@@ -74,8 +74,8 @@ Table of Contents
 |      Clock Signal     |     Enable Signal     |    Set/Reset Signal   | Slice Load Count | Bel Load Count | Bels / Slice |
 +-----------------------+-----------------------+-----------------------+------------------+----------------+--------------+
 |  led_OBUF_BUFG[8]     |                       | bdb/r_btn/led_OBUF[0] |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG        |                       | led_OBUF_BUFG[8]      |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG        |                       | bdb/r_btn/led_OBUF[0] |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG        |                       | led_OBUF_BUFG[8]      |                1 |              1 |         1.00 |
 |  disp/clock_slow/S[0] |                       |                       |                2 |              2 |         1.00 |
 |  clk_IBUF_BUFG        | addrcont/inc/E[0]     | bdb/u_btn/SR[0]       |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG        | bdb/r_btn/led_OBUF[2] |                       |                4 |             16 |         4.00 |
