@@ -56,7 +56,7 @@ module memory_top(
     assign Ibus_data = OE_sw?sw:16'hZZZZ;
     assign Obus_data = OE_op?op_data:16'hZZZZ;
     
-    multiplier mult(.sw(Ibus_data), .led(op_data), .clk(clk)); // Instantiation of Multiplier Module (5.515 WNS??) // TODO: Why is this not faster
+    multiplier mult(.sw(Ibus_data), .led(op_data), .clk(clk)); // Instantiation of Multiplier Module (5.515 WNS)
     
 //    assign op_data = {8'h00, Ibus_data[15:8]} * {8'h00, Ibus_data[7:0]};   // Multiplication Operation (0.249 WNS)
 //    assign op_data = {8'h00, Ibus_data[15:8]} + {8'h00, Ibus_data[7:0]}; // Addition       Operation
