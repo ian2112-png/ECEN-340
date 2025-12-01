@@ -1,0 +1,2 @@
+BITMAP_ROM.v,verilog,xil_defaultlib,../../../../final_lab.gen/sources_1/ip/BITMAP_ROM/sim/BITMAP_ROM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
