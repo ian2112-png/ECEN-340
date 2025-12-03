@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1764614618" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/square.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1764785638" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/square.dcp">
   <File Type="PA-TCL" Name="TOP_1080P_VGA.tcl"/>
   <File Type="REPORTS-TCL" Name="TOP_1080P_VGA_reports.tcl"/>
   <File Type="RDS-RDS" Name="TOP_1080P_VGA.vds"/>
@@ -25,7 +25,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Downloads/ascii_pixel.coe">
+    <File Path="$PPRDIR/../../../../../Downloads/ascii_pixel.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -38,7 +38,7 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../Downloads/Basys3_Master.xdc">
+    <File Path="$PPRDIR/../../../../../Downloads/Basys3_Master.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

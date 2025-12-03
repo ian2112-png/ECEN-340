@@ -1,6 +1,6 @@
 module square(
-    input wire clk, 
-    input wire btnC, 
+    input  wire clk, 
+    input  wire btnC, 
     output reg Hsync,
     output reg Vsync,
     output reg [3:0] vgaRed,
@@ -8,56 +8,79 @@ module square(
     output reg [3:0] vgaBlue
 );
 
-    // Must hold up to 2200 horizontally, 1125 vertically
-    reg [11:0] x_position = 0;
-    reg [11:0] y_position = 0;
+    // -----------------------------------------------------------------
+    // 1080p Timing
+    // -----------------------------------------------------------------
+    localparam H_TOTAL      = 2200;
+    localparam H_SYNC_START = 2008;
+    localparam H_SYNC_END   = 2052;
 
-    // 1080p Timing constants
-    localparam H_TOTAL = 2200;
-    localparam H_SYNC_START = 1920 + 88;        // 2008
-    localparam H_SYNC_END   = H_SYNC_START + 44; // 2052
+    localparam V_TOTAL      = 1125;
+    localparam V_SYNC_START = 1084;
+    localparam V_SYNC_END   = 1089;
 
-    localparam V_TOTAL = 1125;
-    localparam V_SYNC_START = 1080 + 4;         // 1084
-    localparam V_SYNC_END   = V_SYNC_START + 5; // 1089
+    // position counters
+    reg [11:0] x = 0;
+    reg [11:0] y = 0;
 
-    always @(posedge clk or posedge btnC) begin
-        
+    // square position
+    reg [11:0] sq_x = 0;
+    reg [11:0] sq_y = 0;
+
+    // -----------------------------------------------------------------
+    // Position counters
+    // -----------------------------------------------------------------
+    always @(posedge clk) begin
         if (btnC) begin
-            x_position <= 0;
-            y_position <= 0;
-            Hsync <= 0;    
-            Vsync <= 0;
-            vgaRed <= 4'h0; 
+            x <= 0;
+            y <= 0;
+        end else begin
+            if (x == H_TOTAL-1) begin
+                x <= 0;
+                y <= (y == V_TOTAL-1) ? 0 : y + 1;
+            end else begin
+                x <= x + 1;
+            end
+        end
+    end
+
+    // -----------------------------------------------------------------
+    // Move the square once per frame
+    // -----------------------------------------------------------------
+    always @(posedge clk) begin
+        if (btnC) begin
+            sq_x <= 0;
+            sq_y <= 0;
+        end else if (x == H_TOTAL-1 && y == V_TOTAL-1) begin
+            sq_x <= (sq_x + 1 < 1920-220) ? sq_x + 1 : 0;
+            sq_y <= (sq_y + 1 < 1080-200) ? sq_y + 1 : 0;
+        end
+    end
+
+    // -----------------------------------------------------------------
+    // Sync signals (never reset)
+    // -----------------------------------------------------------------
+    always @(posedge clk) begin
+        Hsync <= ~((x >= H_SYNC_START) && (x < H_SYNC_END));
+        Vsync <= ~((y >= V_SYNC_START) && (y < V_SYNC_END));
+    end
+
+    // -----------------------------------------------------------------
+    // RGB pixel generation (only visible region)
+    // -----------------------------------------------------------------
+    always @(posedge clk) begin
+        if (x < 1920 && y < 1080 &&
+            x >= sq_x && x < sq_x+220 &&
+            y >= sq_y && y < sq_y+200) begin
+
+            vgaRed   <= 4'hF;
+            vgaGreen <= 4'hF;
+            vgaBlue  <= 4'hF;
+
+        end else begin
+            vgaRed   <= 4'h0;
             vgaGreen <= 4'h0;
-            vgaBlue <= 4'h0;
-        end 
-        
-        else begin
-
-            // Same logic, just new limits
-            if (x_position == H_TOTAL - 1) begin
-                x_position <= 0;
-                y_position <= (y_position == V_TOTAL - 1 ? 0 : y_position + 1);
-            end else begin
-                x_position <= x_position + 1;
-            end
-
-            // Updated sync ranges for 1080p
-            Hsync <= (x_position >= H_SYNC_START && x_position < H_SYNC_END) ? 0 : 1;
-            Vsync <= (y_position >= V_SYNC_START && y_position < V_SYNC_END) ? 0 : 1;
-
-            // Your original square area (unchanged)
-            if (x_position >= 220 && x_position < 420 &&
-                y_position >= 140 && y_position < 340) begin
-                vgaRed   <= 4'hF;
-                vgaGreen <= 4'hF;
-                vgaBlue  <= 4'hF;
-            end else begin
-                vgaRed   <= 4'h0;
-                vgaGreen <= 4'h0;
-                vgaBlue  <= 4'h0;
-            end
+            vgaBlue  <= 4'h0;
         end
     end
 

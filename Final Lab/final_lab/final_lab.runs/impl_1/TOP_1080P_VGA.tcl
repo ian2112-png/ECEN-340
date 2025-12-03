@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/ian2112/final_lab/final_lab.runs/impl_1/TOP_1080P_VGA.tcl"
+  variable script "C:/Users/ian2112/Documents/GitHub/ECEN-340/Final Lab/final_lab/final_lab.runs/impl_1/TOP_1080P_VGA.tcl"
   variable category "vivado_impl"
 }
 
@@ -97,6 +97,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -109,7 +110,7 @@ set rc [catch {
   set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 10  }
   open_checkpoint TOP_1080P_VGA_routed.dcp
-  set_property webtalk.parent_dir C:/Users/ian2112/final_lab/final_lab.cache/wt [current_project]
+  set_property webtalk.parent_dir {C:/Users/ian2112/Documents/GitHub/ECEN-340/Final Lab/final_lab/final_lab.cache/wt} [current_project]
 set_property TOP TOP_1080P_VGA [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

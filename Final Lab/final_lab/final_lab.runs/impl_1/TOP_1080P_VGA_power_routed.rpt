@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Mon Dec  1 11:44:50 2025
+| Date             : Wed Dec  3 11:15:00 2025
 | Host             : 25STC151L17 running 64-bit major release  (build 9200)
 | Command          : report_power -file TOP_1080P_VGA_power_routed.rpt -pb TOP_1080P_VGA_power_summary_routed.pb -rpx TOP_1080P_VGA_power_routed.rpx
 | Design           : TOP_1080P_VGA
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.192        |
+| Total On-Chip Power (W)  | 0.191        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.120        |
+| Dynamic (W)              | 0.119        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.0         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        8 |       --- |             --- |
-| Slice Logic    |    <0.001 |       90 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       34 |     20800 |            0.16 |
-|   CARRY4       |    <0.001 |        6 |      8150 |            0.07 |
-|   Register     |    <0.001 |       38 |     41600 |            0.09 |
+| Slice Logic    |    <0.001 |      203 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       70 |     20800 |            0.34 |
+|   CARRY4       |    <0.001 |       30 |      8150 |            0.37 |
+|   Register     |    <0.001 |       62 |     41600 |            0.15 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |       81 |       --- |             --- |
+| Signals        |    <0.001 |      141 |       --- |             --- |
 | MMCM           |     0.117 |        1 |         5 |           20.00 |
-| I/O            |     0.002 |       16 |       106 |           15.09 |
+| I/O            |    <0.001 |       16 |       106 |           15.09 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.192 |          |           |                 |
+| Total          |     0.191 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -146,10 +146,10 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| TOP_1080P_VGA    |     0.120 |
+| TOP_1080P_VGA    |     0.119 |
 |   CLOCK_GEN      |     0.117 |
 |     inst         |     0.117 |
-|   VGA_CONTROLLER |     0.001 |
+|   VGA_CONTROLLER |     0.002 |
 +------------------+-----------+
 
 
